@@ -15,7 +15,7 @@ import Blog from './MDA/Blog.jsx';
 import Products from './MDA/Products.jsx';
 import Seed_Drill_Pro from './MDA/Category_1.jsx';
 import Cultivator_Shovels_Pro from './MDA/category_2.jsx';
-import Duck_Sweeps_Pro from './MDA/Caterory_5.jsx';
+import Duck_Sweeps_Pro from './MDA/Category_5.jsx';
 import Tiller_Duck_Pro from './MDA/Category_4.jsx';
 import Footer from './MDA/Footer.jsx';
 import Inter_Shovels_Pro from './MDA/Category_3.jsx';
