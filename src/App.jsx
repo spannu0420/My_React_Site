@@ -6,26 +6,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Pages Components
 
-import NavScrollExample from './MDA/Navbar';
-import FluidExample from './MDA/Home';
+import NavScrollExample from './MDA/Navbar.jsx';
+import FluidExample from './MDA/Home.jsx';
 import About_us from './MDA/About_us.jsx';
-import Why_us from './MDA/Why_us';
-import Contact from './MDA/Contact';
-import Blog from './MDA/Blog';
+import Why_us from './MDA/Why_us.jsx';
+import Contact from './MDA/Contact.jsx';
+import Blog from './MDA/Blog.jsx';
 import Products from './MDA/Products.jsx';
-import Seed_Drill_Pro from './MDA/Category_1';
-import Cultivator_Shovels_Pro from './MDA/category_2';
+import Seed_Drill_Pro from './MDA/Category_1.jsx';
+import Cultivator_Shovels_Pro from './MDA/category_2.jsx';
 import Duck_Sweeps_Pro from './MDA/Caterory_5.jsx';
-import Tiller_Duck_Pro from './MDA/Category_4';
-import Footer from './MDA/Footer';
-import Inter_Shovels_Pro from './MDA/Category_3';
+import Tiller_Duck_Pro from './MDA/Category_4.jsx';
+import Footer from './MDA/Footer.jsx';
+import Inter_Shovels_Pro from './MDA/Category_3.jsx';
 import M_B_Plough_Pro from './MDA/M_B.jsx';
 import Rotary_Pro from './MDA/Rotary_Blades.jsx';
 import Rotavator_Pro from './MDA/Rotavator.jsx';
-import Plough from './MDA/Plough';
-import Sub_Soiler from './MDA/Sub_soiler_blades';
-import FloatingButtons from './MDA/Floting_Buttons';
-import Certificates from './MDA/Certificates';
+import Plough from './MDA/Plough.jsx';
+import Sub_Soiler from './MDA/Sub_soiler_blades.jsx';
+import FloatingButtons from './MDA/Floting_Buttons.jsx';
+import Certificates from './MDA/Certificates.jsx';
 
 
 
