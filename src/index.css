@@ -1,0 +1,408 @@
+.image {
+  height: 70px;
+  width: auto;
+}
+
+.image_2 {
+  max-width: 580px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.our {
+  font-family: cursive;
+}
+.agro-card {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 1;
+}
+
+.agro-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.agro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; 
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(25, 135, 84, 0.95), rgba(20, 108, 67, 0.95));
+  transition: left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: -1;
+}
+
+.agro-card:hover::before {
+  left: 0;
+}
+
+
+.hover-photo-box {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+}
+.hover-photo-box:hover .photo-text-overlay {
+  bottom: 0 !important;
+}
+.hover-photo-box img {
+  transition: transform 0.4s ease-in-out !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.hover-photo-box:hover img {
+  transform: scale(1.05) !important;
+}
+.photo-text-overlay {
+  position: absolute !important;
+  bottom: -100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 100% !important;
+  background: rgba(25, 135, 84, 0.85) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 15px !important;
+  transition: bottom 0.4s ease-in-out !important;
+  z-index: 5 !important;.seamlessMarqueeSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  margin: 0 auto;
+}
+}
+.brdr{
+  border: solid 10px yellow;
+
+}
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.client-card {
+  background-color: #f4f6f3 !important;
+  border: none !important;
+  border-radius: 12px !important;
+  min-width: 250px;
+  max-width: 250px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  padding: 20px;
+}
+
+.client-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.A29{
+  height: 300px;
+}
+.custom-btn {
+  position: relative;
+  width: 150px;
+  padding: 12px 24px;
+  background-color: #111;
+  color: #6bc6cd;
+  border: 2px solid #6bc6cd;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.6s ease;
+}
+
+.custom-btn:hover {
+  background-color: #6bc6cd;
+  color: #111;
+  box-shadow: 0 0 25px rgba(107, 198, 205, 0.8);
+  transform: translateY(-3px);
+}
+
+.custom-btn:hover::before {
+  left: 100%;
+}
+
+.custom-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(107, 198, 205, 0.5);
+}
+body {
+  color: var(--agri-dark);
+  background-color: #ffffff;
+}
+
+:root {
+  --agri-green: #1e5128;       /* Deep Forest Green (Primary) */
+  --agri-light-green: #4e9f3d; /* Fresh Accent Green */
+  --agri-gold: #e2b65c;        /* Harvest Gold (Great for buttons) */
+  --agri-dark: #191a19;        /* Text color */
+  --agri-bg: #f6fbf4;          /* Soft light background */
+}
+
+/* Custom global overrides */
+body {
+  color: var(--agri-dark);
+  background-color: #ffffff;
+}
+
+/* Base card style preparation */
+.custom-card-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+/* Hover active state */
+.custom-card-hover:hover {
+  transform: translateY(-8px); /* Card moves slightly upwards */
+  box-shadow: 0 10px 20px rgba(30, 81, 40, 0.15) !important; /* Soft green-tinted shadow */
+  cursor: pointer;
+  color: #1e5128;
+}
+.button{
+  background-color: rgb(238, 230, 230);
+}
+/* 1. Button ki normal state (Normal dikhte waqt) */
+.agri-btn-hover {
+  background-color: rgb(229, 225, 225) !important;
+  border: none !important;
+  color: var(--agri-dark) !important;
+  transition: all 0.3s ease-in-out !important; /* Isse color smoothly badlega */
+}
+
+/* 2. Button ki Hover state (Jab mouse upar aayega) */
+.agri-btn-hover:hover {
+  background-color: rgb(55, 158, 55) !important; /* Hover par dark green ho jayega */
+  border-color: green !important;
+  color: #ffffff !important; /* Text color white ho jayega */
+}
+
+
+
+.custom-bg-hero {
+  background-image:url('https://i.ibb.co/84ztWgJy/Gemini-Generated-Image-fuwahzfuwahzfuwa.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+.changetxt{
+  border: 1px solid black;
+}
+/* Soil Card का डिफ़ॉल्ट स्टाइल और स्मूथ ट्रांज़िशन */
+.soil-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+.soil-card-hover:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; 
+  background-color: #63c2c9 !important; 
+  color: white;
+}
+
+.custom-bg-contact {
+  background-image:url('https://www.staragroindustry.com/public/static/contact-breadcrumb.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.box{
+  position:absolute;
+  top: 60.2%; 
+  left: 20%;
+  border: 1px solid black;
+ /* min-width: 50px; */
+ width: 100px;
+}
+.floating-container {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+  align-items: flex-end;
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.brochure-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  box-shadow: none;
+}
+
+.brochure-text {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px 5px;
+  font-size: 11px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 1px;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+.brochure-text b {
+  color: #d32f2f;
+}
+
+.pdf-icon-wrapper {
+  background-color: #d32f2f;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.call-btn {
+  background-color: #0f223d;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.custom-interaction-card {
+  height: 450px;
+  cursor: pointer;
+}
+
+.sliding-text-box {
+  transform: translateY(55%);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.custom-interaction-card:hover .sliding-text-box {
+  transform: translateY(0);
+}
+
+.sliding-text-box .card-text {
+  font-size: 1.1rem;
+  color: #1e293b;
+  line-height: 1.6;
+  min-height: 180px;
+}
+.btn2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lavenderblush;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn2 span {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.15); 
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease-out, height 0.4s ease-out;
+  z-index: 2;
+}
+
+.btn2:hover::before {
+  width: 350px;
+  height: 350px;
+}
+.cirti{
+  height: 300px;
+}
