@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card_Slider, Our_Clients, Our_Product, Photos, Quality, Real_Stories,  } from './Home_cards';
+import { Card_Slider, Our_Clients, Our_Product, Photos, Quality, Real_Stories,  } from './Home_Cards';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { ClientsAPI, PhotosAPI, ProductAPI, QualityAPI, Real_StoresAPI, SliderAPI, } from './Home_Cards_2';
 import { Swiper, SwiperSlide } from 'swiper/react';
