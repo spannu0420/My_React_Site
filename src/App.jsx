@@ -13,7 +13,7 @@ import Blog from './MDA/Blog';
 import Products from './MDA/Products';
 import Seed_Drill_Pro from './MDA/Category_1';
 import Cultivator_Shovels_Pro from './MDA/category_2';
-import Duck_Sweeps_Pro from './MDA/Caterory_5';
+import Duck_Sweeps_Pro from "./MDA/Category_5";
 import Tiller_Duck_Pro from './MDA/Category_4';
 import Footer from './MDA/Footer';
 import Inter_Shovels_Pro from './MDA/Category_3';
