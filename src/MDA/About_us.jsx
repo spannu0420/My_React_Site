@@ -28,7 +28,7 @@ function About_us() {
                         <h2>Building India’s Farming Future with Strength and Trust</h2>
                         <h6 className="text-muted lh-base"> India's Strength is Agriculture and Star Agro Industries is the Strength of Agriculture. Since 1999, we have been developing reliable implements that help you operate better, faster and with greater productivity in the field. Every product is a product of years of experience, learning in the field and farmer first approach.</h6>
                         <div className="btn2 mt-4">
-                            <Button as={Link} to="/About_us">Contact Now <img style={{ height: '40px', backgroundColor: 'gray', borderRadius: '100%', padding: '10px' }} src="https://www.staragroindustry.com/public/front_assets/images/right-arrow-2.png" alt="" /></Button>
+                             <Button as={Link} to="/About_us">Contact Now <img style={{ height: '40px', backgroundColor: 'gray', borderRadius: '100%', padding: '10px' }} src="https://www.staragroindustry.com/public/front_assets/images/right-arrow-2.png" alt="" /></Button>
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="text-center">
